@@ -7,6 +7,10 @@ const commands = [
         description: 'Replies with Hey!',
     },
     {
+        name: 'github',
+        description: 'Replies with Github Organization Link',
+    },
+    {
         name: 'console-log',
         description: 'sends message to bot dev console logs',
         options: [{

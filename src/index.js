@@ -52,5 +52,8 @@ if (interaction.commandName === 'console-log') {
   interaction.reply(`Sending "${message}" to Console Logs`);
   console.log(`"${message}" Sent From ${interaction.user.tag}`);
 }
+if (interaction.commandName === 'github' ) {
+  interaction.reply('https://github.com/Nuclear-Blast-Testing-Facility/');
+}
 });
 client.login(process.env.TOKEN);
