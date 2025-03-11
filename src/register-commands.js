@@ -3,10 +3,6 @@ const {REST, Routes, ApplicationCommandOptionType} = require('discord.js');
 
 const commands = [
     {
-        name: 'hey',
-        description: 'Replies with Hey!',
-    },
-    {
         name: 'github',
         description: 'Replies with Github Organization Link',
     },
@@ -27,51 +23,6 @@ const commands = [
     {
         name: 'pong',
         description: 'Ping!',
-    },
-    {
-        name: 'times',
-        description: 'Num X Num Calculator',
-        options: [
-            {
-                name: 'first-number',
-                description: 'The first number.',
-                type: ApplicationCommandOptionType.Number,
-                required: true,
-            },
-            {
-                name: 'second-number',
-                description: 'The second number.',
-                type: ApplicationCommandOptionType.Number,
-                required: true,
-            },]
-    },
-    {
-      name : 'add',
-      description : 'Addition Calculator',
-      options: [
-        {
-            name: 'first-number',
-            description: 'The first number.',
-            type: ApplicationCommandOptionType.Number,
-            choices: [
-            {
-                name: 'one',
-                value: 1,
-            },
-            {
-                name: 'two',
-                value: 2,
-            }
-            ],
-            required: true,
-        },
-        {
-            name: 'second-number',
-            description: 'The second number.',
-            type: ApplicationCommandOptionType.Number,
-            required: true,
-        },
-      ]
     },
 ];
 
